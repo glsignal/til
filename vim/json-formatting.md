@@ -3,9 +3,9 @@ Formatting JSON
 
 Calling the following in a buffer (assuming it's filled with ugly json)
 
-    :%!python -m json.tool
+    :%!jq
 
-will format it using python's json tool.
+will format it better.
 
 The underlying TIL here is the use of :%<command> which operates on the entire
 buffer/selection, including external commands. Previously only ever used this
